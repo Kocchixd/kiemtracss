@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Kiểm tra đề nâng cao</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 1400px;
+    }
+    .header {
+      margin-left: 50px;
+      text-align: center;
+    }
+    .header img {
+      margin-top: 50px;
+      max-width: 1200px;
+    }
+    h2 {
+      margin: 50px auto 10px auto;
+      font-size: 32px;
+    }
+    .header b {
+      font-size: 14px;
+      padding-bottom: 50px;
+    }
+    mark {
+      background-color: #626262;
+    }
+    .container {
+      display: grid;
+      max-width: 1200px;
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 50px;
+      grid-template-areas:
+        "content1 slicebar1"
+        "content1 slicebar2"
+        "content1 slicebar3"
+        "content2 slicebar4"
+        "content2 slicebar5"
+        "content2 slicebar6"
+        "content2 slicebar7"
+        "content3 content3";
+    }
+    #item1 {
+      grid-area: content1;
+    }
+    #item2 {
+      grid-area: content2;
+    }
+    #item3 {
+      grid-area: content3;
+    }
+    #item4 {
+      grid-area: slicebar1;
+    }
+    #item5 {
+      grid-area: slicebar2;
+    }
+    #item6 {
+      grid-area: slicebar3;
+    }
+    #item7 {
+      grid-area: slicebar4;
+    }
+    #item8 {
+      grid-area: slicebar5;
+    }
+    #item9 {
+      grid-area: slicebar6;
+    }
+    #item10 {
+      grid-area: slicebar7;
+    }
+    .content {
+      max-width: 800px;
+      margin-top: 40px;
+      margin-left: 100px;
+      margin-right: 50px;
+    }
+    .extra {
+      max-width: 400px;
+      margin-top: 40px;
+    }
+    .content img {
+      max-width: 740px;
+    }
+    .extra img {
+      max-width: 380px;
+    }
+    h4 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .p1 {
+      font: 12px;
+      text-align: center;
+    }
+    .p2 {
+      margin: 20px auto 20px auto;
+    }
+    .button1 {
+      height: 30px;
+      width: 80px;
+    }
+    .button2 {
+      height: 30px;
+      width: 80px;
+      background-color: black;
+      color: white;
+    }
+    .content mark {
+      background-color: white;
+      color: black;
+    }
+    #item4 img {
+      height: 300px;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h2>GWEN BLOGLIFE</h2>
+      <b>Welcome to the blog of <mark>Gwen's world</mark></b> <br />
+      <img
+        src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg"
+        alt=""
+      />
+    </div>
+    <div class="container">
+      <div class="content" id="item1">
+        <h4>TITLE HEADING</h4>
+        <p class="p1"><b>Title description,</b> June 16, 2023</p>
+        <br />
+        <img
+          src="https://gameriv.com/wp-content/uploads/2023/06/image-172-1200x675.png"
+          alt=""
+        />
+        <p class="p2">
+          <b>Soul fighter Gwen joins LoR! </b>Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Odio tempore eos perferendis, ut aperiam
+          dolores nulla! Fugit ab obcaecati, ad labore itaque modi ipsam harum
+          qui corrupti, illum sed! Quae nihil dolores hic libero sit, voluptas
+          voluptatum, aperiam, vel aliquam aliquid doloremque repudiandae
+          explicabo nam architecto ab odit nisi consequatur?
+        </p>
+        <button class="button1">
+          <i class="fa-solid fa-thumbs-up"></i> Like
+        </button>
+        <button class="button2"><b>Replies</b> <mark>1</mark></button>
+      </div>
+      <div class="content" id="item2">
+        <h4>TITLE HEADING</h4>
+        <p class="p1"><b>Title description,</b> February 12, 2023</p>
+        <br />
+        <img
+          src="https://gameriv.com/wp-content/uploads/2022/12/Fkpd6JDXoAA-_0g-1200x555.jpg"
+          alt=""
+        />
+        <p class="p2">
+          <b>Mythmaker Gwen lives on Wild Rift </b>Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Odio tempore eos perferendis, ut aperiam
+          dolores nulla! Fugit ab obcaecati, ad labore itaque modi ipsam harum
+          qui corrupti, illum sed! Quae nihil dolores hic libero sit, voluptas
+          voluptatum, aperiam, vel aliquam aliquid doloremque repudiandae
+          explicabo nam architecto ab odit nisi consequatur?
+        </p>
+        <button class="button1">
+          <i class="fa-solid fa-thumbs-up"></i> Like
+        </button>
+        <button class="button2"><b>Replies</b> <mark>2</mark></button>
+      </div>
+      <div class="content" id="item3">
+        <h4>TITLE HEADING</h4>
+        <p class="p1"><b>Title description,</b> November 15, 2021</p>
+        <br />
+        <img
+          src="https://www.mobafire.com/images/champion/skins/landscape/gwen-cafe-cuties-762x.jpg"
+          alt=""
+        />
+        <p class="p2">
+          <b>Buy Cafe Cuties Gwen now for 1350rp </b>Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Odio tempore eos perferendis, ut aperiam
+          dolores nulla! Fugit ab obcaecati, ad labore itaque modi ipsam harum
+          qui corrupti, illum sed! Quae nihil dolores hic libero sit, voluptas
+          voluptatum, aperiam, vel aliquam aliquid doloremque repudiandae
+          explicabo nam architecto ab odit nisi consequatur?
+        </p>
+        <button class="button1">
+          <i class="fa-solid fa-thumbs-up"></i> Like
+        </button>
+        <button class="button2"><b>Replies</b> <mark>3</mark></button>
+      </div>
+      <div class="extra" id="item4">
+        <img
+          src="https://1.bp.blogspot.com/-PQbUtihJbXU/YF34nRAe6NI/AAAAAAAB3cU/UAnguBBJF6UlFmBxLP9XbqPxRqX_cS5mwCLcBGAsYHQ/s1920/1.png"
+          alt=""
+        />
+        <b>My Name</b>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          tempore quisquam laudantium vero similique consequatur, illum debitis
+          fugit sunt odit placeat maiores.
+        </p>
+      </div>
+      <div class="extra" id="item5">
+        <table>
+          <thead>
+            <b>Popular Relative</b>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://api.nuget.org/v3-flatcontainer/pyke/0.2.0/icon"
+                  alt=""
+                />
+                Pyke
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  src="https://avatarfiles.alphacoders.com/275/thumb-275804.jpg"
+                  alt=""
+                />
+                Viego
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://i.pinimg.com/736x/03/0f/d9/030fd999db07a4a63b8ca7dab565cc66.jpg"
+                  alt=""
+                />
+                Senna
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://www.mobafire.com/images/champion/square/lucian.png"
+                  alt=""
+                />
+                Lucian
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="extra" id="item6">
+          <b>Advertise</b>
+          <p>Your AD Here</p>
+        </div>
+        <div class="extra" id="item7">
+          <b>Tags</b>
+          <a href="#">League</a> <a href="#">Sentinels</a>
+          <a href="#">Top Lane</a> <a href="#">Opponents</a>
+          <a href="#">Skins</a> <a href="#">Others</a>
+        </div>
+        <div class="extra" id="item8">
+          <b>Inspiration</b>
+          <img
+            src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_0.jpg"
+            alt=""
+          />
+          <img
+            src="https://cdn.sforum.vn/sforum/wp-content/uploads/2021/09/vex-2.jpg"
+            alt=""
+          />
+          <img
+            src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_0.jpg"
+            alt=""
+          />
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+        </div>
+        <div class="extra" id="item9">
+          <b>Follow Me</b>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-snapchat"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="extra" id="item10">
+          <b>Subscribe</b>
+          <p>
+            Enter your e-mail below and get notified on the latest blog posts.
+          </p>
+          <form action="">
+            <input type="email" placeholder="Enter e-mail" />
+          </form>
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
